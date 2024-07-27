@@ -7,7 +7,8 @@
         "build": "bun build src/index.ts",
         "start": "NODE_ENV=production bun src/index.ts",
         "test": "bun test",
-        "migrate": "bun src/database/migrate.ts"
+        "migrate": "bun src/database/migrate.ts",
+        "generate": "bunx drizzle-kit generate"
     },
     "devDependencies": {
         "@types/bun": "latest",
