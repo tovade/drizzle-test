@@ -1,0 +1,26 @@
+{
+    "name": "drizzle-test",
+    "module": "src/index.ts",
+    "type": "module",
+    "scripts": {
+        "dev": "bun --watch src/index.ts",
+        "build": "bun build src/index.ts",
+        "start": "NODE_ENV=production bun src/index.ts",
+        "test": "bun test",
+        "migrate": "bun src/database/migrate.ts"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/pg": "^8.11.6",
+        "drizzle-kit": "^0.23.0",
+        "prettier": "^3.3.3"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "drizzle-orm": "^0.32.1",
+        "elysia": "^1.1.4",
+        "pg": "^8.12.0"
+    }
+}
